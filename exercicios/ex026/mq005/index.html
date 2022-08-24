@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,12 +26,21 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur architecto ducimus. Dolorum ex temporibus, veritatis, animi a dolores deleniti totam dicta corporis rerum reprehenderit dolore ut veniam! Repellendus, repellat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur architecto ducimus. Dolorum ex temporibus, veritatis, animi a dolores deleniti totam dicta corporis rerum reprehenderit dolore ut veniam! Repellendus, repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ratione, iure ad eos quam ipsam at tenetur neque consequuntur et exercitationem fuga maxime deserunt facere necessitatibus dolor doloremque, ducimus aliquid?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, assumenda possimus, ad, provident culpa molestiae nesciunt porro facere neque expedita accusantium? Eius quisquam sit ea, deleniti unde pariatur itaque quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, assumenda possimus, ad, provident culpa molestiae nesciunt porro facere neque expedita accusantium? Eius quisquam sit ea, deleniti unde pariatur itaque quia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas aspernatur repellendus voluptatum, ipsa nihil laboriosam quis dignissimos omnis cum sapiente ab ex commodi, ipsum architecto officia aut blanditiis dolorem quae!</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid fugiat similique ducimus quasi architecto at? Libero, nisi nesciunt. Mollitia, dolores. Expedita ipsum voluptas ullam nisi beatae atque nulla dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid fugiat similique ducimus quasi architecto at? Libero, nisi nesciunt. Mollitia, dolores. Expedita ipsum voluptas ullam nisi beatae atque nulla dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quos necessitatibus repellendus neque ipsam exercitationem officia veritatis ad corrupti alias placeat, obcaecati, quis dignissimos soluta eveniet. Quasi tempore omnis quo.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
